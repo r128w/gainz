@@ -39,8 +39,9 @@ if sys.argv[1] == "add" :
     for i in range(exerciseCount):
         print("Exercise " + str(i+1) + ":")
         newEntry += "|" + input("  sets ? ") + "x" + input("  reps ? ") + "-" + input("  name ? ") + "-" + input("  rest ? ")
-        if input("  weight (y/n) ? ") == "y":
-            newEntry += "-" + input("  amount ? ")
+        weight = input("  weight ? ")
+        if weight != "n":
+            newEntry += "-" + weight
     FTW = "" # File To Write
     for line in archiveLines:
         FTW += line + "\n"
