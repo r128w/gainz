@@ -7,3 +7,5 @@ gainz help: Displays this file
 gainz show: Writes all workouts out fully
 gainz add: Adds a workout
 gainz type: Writes all workout dates and their focus
+
+in gainz add, if an exercise has no weight, enter "n"
